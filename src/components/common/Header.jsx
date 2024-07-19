@@ -36,7 +36,7 @@ function Header() {
                     <div className="flex-1 md:flex md:items-center md:gap-12">
                         <Link className="block text-teal-600" to="/">
                             <span className="sr-only">Home</span>
-                            <img src={logo} className="w-full h-[70px]" alt="logo"/>
+                            <img src={logo} className="w-[120px] md:w-full md:h-[70px]" alt="logo"/>
                         </Link>
                     </div>
 
@@ -57,7 +57,7 @@ function Header() {
                             <div className="sm:flex sm:gap-4">
                                 <Link
                                     className={buttonVariants({ variant: "default" })}
-                                    to="#"
+                                    to="/login"
                                 >
                                     Login
                                 </Link>

@@ -9,6 +9,9 @@ import ServicesPage from "@/pages/Services/ServicesPage";
 import NotFound from "@/pages/NotFound/NotFound";
 import ServicesSinglePage from "@/pages/ServicesSingle/ServicesSinglePage";
 import LoadingScreen from "@/pages/LoadingScreen/LoadingScreen";
+import LoginPage from "@/pages/Login/LoginPage";
+
+import SucessAlert from "@/components/PlaceholderComponents/SucessAlert";
 
 const Router = () => {
   return (
@@ -19,6 +22,8 @@ const Router = () => {
       <Route path="/services-list" element={<ServicesPage />} />
       <Route path="/services-single" element={<ServicesSinglePage />} />
       <Route path="/loading-screen" element={<LoadingScreen />} />
+      <Route path="/alert" element={<SucessAlert />} />
+      <Route path="/login" element={<LoginPage />} />
 
     {/* 404 page */}
       <Route path='*' element={<NotFound />} />

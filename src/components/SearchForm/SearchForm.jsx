@@ -50,16 +50,16 @@ function SearchForm() {
   })
 
   return (
-    <div className="fomr-wrapper">
+    <div className="form-wrapper px-2">
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col md:flex-row space-y-2 md:space-y-0">
           <FormField
             control={form.control}
             name="serviceName"
             render={({ field }) => (
               <FormItem>
                 {/* <FormLabel>Service Name</FormLabel> */}
-                <FormControl className="focus:ring-offset-0 focus-visible:ring-offset-0 focus-visible:ring-0 h-12 rounded-r-none min-w-[250px]">
+                <FormControl className="focus:ring-offset-0 focus-visible:ring-offset-0 focus-visible:ring-0 h-12 md:rounded-r-none min-w-[250px]">
                   <Input placeholder="Type a service" {...field} className="" />
                 </FormControl>
               </FormItem>
@@ -72,7 +72,7 @@ function SearchForm() {
               <FormItem>
                 {/* <FormLabel>Email</FormLabel> */}
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
-                  <FormControl className="rounded-none min-w-[200px] focus:ring-offset-0 focus-visible:ring-offset-0 focus-visible:ring-0 h-12">
+                  <FormControl className="md:rounded-none min-w-[200px] focus:ring-offset-0 focus-visible:ring-offset-0 focus-visible:ring-0 h-12">
                     <SelectTrigger>
                       <SelectValue placeholder="Select a category" />
                     </SelectTrigger>
@@ -95,7 +95,7 @@ function SearchForm() {
               <FormItem>
                 {/* <FormLabel>Email</FormLabel> */}
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
-                  <FormControl className="rounded-none min-w-[200px] focus:ring-offset-0 focus-visible:ring-offset-0 focus-visible:ring-0 h-12">
+                  <FormControl className="md:rounded-none min-w-[200px] focus:ring-offset-0 focus-visible:ring-offset-0 focus-visible:ring-0 h-12">
                     <SelectTrigger>
                       <SelectValue placeholder="Select a District" />
                     </SelectTrigger>
@@ -111,7 +111,7 @@ function SearchForm() {
               </FormItem>
             )}
           />
-          <Button type="submit" className="rounded-l-none h-12 flex gap-2">
+          <Button type="submit" className="md:rounded-l-none h-12 flex gap-2 mb-2">
             <span>Search Now</span>
             <Search className="w-[16px]" />
           </Button>

@@ -15,4 +15,12 @@ export const headerMenuData = [
         'menuText' : 'Services',
         'menuLink' : '/services-list'
     },
+    {
+        'menuText' : 'Alerts',
+        'menuLink' : '/alert'
+    },
+    {
+        'menuText' : 'Ladong Screen',
+        'menuLink' : '/loading-screen'
+    },
 ]
