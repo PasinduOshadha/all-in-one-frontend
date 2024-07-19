@@ -21,9 +21,9 @@ import {
 export default function ServicesPage() {
   return (
     <>
-      <section className="mt-20 relative overflow-hidden">
+      <section className="mt-[70px] md:mt-20 relative overflow-hidden">
         <img src={coverBG} alt="cover image" className="absolute top-0 left-0 w-fullz-[10]" />
-        <div className="bg-slate-950/80 px-0 lg:px-8 grid place-content-center min-h-[40vh] z-20 relative">
+        <div className="bg-slate-950/80 py-10 px-2 md:px-0 lg:px-8 grid place-content-center min-h-[40vh] z-20 relative">
 
           <h1 className="text-4xl font-bold text-center text-white w-full mb-3">Our Services</h1>
           <div className="text-slate-100 text-center font-light max-w-[550px] mx-auto mb-4">
@@ -38,7 +38,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="mt-20 space-y-4">
-        <div className='container grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 place-content-between gap-x-2 gap-y-8 px-0 lg:px-8'>
+        <div className='container grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 place-content-between gap-x-2 gap-y-8 px-2 md:px-0 lg:px-8'>
           {
             servicesData.map((service) => (
               <ProductServiceCard
