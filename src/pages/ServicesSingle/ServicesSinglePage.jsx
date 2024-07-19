@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import useScrollPosition from '@/hooks/useScrollPosition'
 import useHeight from '@/hooks/useHeight'
 
+
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
@@ -10,7 +11,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from '@/components/ui/badge'
 import { MapPinIcon } from 'lucide-react'
 import BookingForm from '@/components/BookingForm/BookingForm'
-import RevewForm from '@/components/ReviewForm/ReviewForm'
+import ReviewForm from '@/components/ReviewForm/ReviewForm'
 
 
 function ServicesSinglePage() {
@@ -23,8 +24,10 @@ function ServicesSinglePage() {
         if (formWrapperRef.current) {
             if (scrollPosition.y > contentHeight) {
                 formWrapperRef.current.classList.remove('lg:fixed');
+                formWrapperRef.current.classList.remove('lg:max-w-[350px]');
             } else {
                 formWrapperRef.current.classList.add('lg:fixed');
+                formWrapperRef.current.classList.add('lg:max-w-[350px]');
             }
         }
     }, [scrollPosition.y, contentHeight]);
@@ -34,7 +37,7 @@ function ServicesSinglePage() {
         <>
             <section ref={divRef} className="mt-20 relative overflow-hidden mb-10 service-content-col">
                 <div className="container grid grid-cols-1 gap-6 md:grid-cols-[2fr_1fr] lg:gap-12 items-start">
-                    <div className="grid gap-6 pl-4 md:pl-0">
+                    <div className="grid gap-6 pl-0">
                         <img
                             src="https://images.pexels.com/photos/9029162/pexels-photo-9029162.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2"
                             alt="Service Banner"
@@ -69,7 +72,7 @@ function ServicesSinglePage() {
                             </div>
                         </div>
                     </div>
-                    <div ref={formWrapperRef} className={`service-booking-form-wrapper relative lg:fixed transition-all grid gap-6 sm:right-[1vw] md:right-[4vw] 2xl:right-[15vw]`}>
+                    <div ref={formWrapperRef} className={`service-booking-form-wrapper relative lg:fixed transition-all grid gap-6 sm:right-[1vw] md:right-[4vw] xl:right-0 2xl:right-[10vw] lg:max-w-[350px] xl:max-w-[450px]`}>
                         <BookingForm />
                     </div>
                 </div>
@@ -77,7 +80,7 @@ function ServicesSinglePage() {
 
             <section className="mb-4">
                 <div className="container">
-                    <RevewForm />
+                    <ReviewForm />
                 </div>
             </section>
         </>

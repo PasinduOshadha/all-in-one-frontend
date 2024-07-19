@@ -22,7 +22,7 @@ import { Link } from "react-router-dom"
 function LoginPage() {
 
   return (
-    <section className="mt-20 h-[45vh] grid place-items-center">
+    <section className="mt-[90px] mb-10 h-[45vh] grid place-items-center">
     <Card className="mx-auto max-w-sm">
       <CardHeader>
         <CardTitle className="text-2xl">Login</CardTitle>

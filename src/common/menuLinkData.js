@@ -20,7 +20,11 @@ export const headerMenuData = [
         'menuLink' : '/alert'
     },
     {
-        'menuText' : 'Ladong Screen',
+        'menuText' : 'Loading Screen',
         'menuLink' : '/loading-screen'
+    },
+    {
+        'menuText' : 'Products',
+        'menuLink' : '/products'
     },
 ]

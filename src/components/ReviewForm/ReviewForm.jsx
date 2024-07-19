@@ -14,9 +14,9 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination"
 
-export default function RevewForm() {
+export default function ReviewForm() {
   return (
-    <div className="max-w-2xl space-y-8">
+    <div className="space-y-8">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-0.5 text-[#ffd700]">
@@ -45,7 +45,7 @@ export default function RevewForm() {
               </div>
             </div>
             <Textarea placeholder="Write your review here..." className="resize-none" rows={4} />
-            <Button type="submit" size="sm">
+            <Button type="submit" size="sm" className="w-[200px] h-11">
               Submit Review
             </Button>
           </form>
@@ -157,12 +157,6 @@ export default function RevewForm() {
           </PaginationItem>
           <PaginationItem>
             <PaginationLink href="#">2</PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink href="#">3</PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink href="#">4</PaginationLink>
           </PaginationItem>
           <PaginationItem>
             <PaginationEllipsis />
