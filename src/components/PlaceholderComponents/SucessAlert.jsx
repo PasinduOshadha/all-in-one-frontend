@@ -4,13 +4,18 @@ import { Button } from "@/components/ui/button"
 
 function SucessAlert() {
 
-    const showAlert = () => {
-        toast.success('Login Successful!!')
+    const showSucessAlert = () => {
+        toast.success(<div>Login Successful!</div>);
+    }
+
+    const showFailedAlert = () => {
+        toast.error(<div><b>Login Failed!!</b><br/> Incorrect Username or Password</div>)
     }
 
   return (
-    <div className="my-20 h-80 place-items-center grid">
-        <Button variant="default" onClick={showAlert}>Show Alert</Button>
+    <div className="my-20 h-80 flex justify-center items-center gap-2">
+        <Button variant="default" onClick={showSucessAlert}>Show Sucess Alert</Button>
+        <Button className="bg-red-500 hover:bg-red-700" onClick={showFailedAlert}>Show Failed Alert</Button>
         <Toaster
         position="top-right"
         richColors
