@@ -10,6 +10,9 @@ import NotFound from "@/pages/NotFound/NotFound";
 import ServicesSinglePage from "@/pages/ServicesSingle/ServicesSinglePage";
 import LoadingScreen from "@/pages/LoadingScreen/LoadingScreen";
 import LoginPage from "@/pages/Login/LoginPage";
+import ProductsPage from "@/pages/Products/ProductsPage";
+import ProductsSinglePage from "@/pages/ProductsSingle/ProductsSinglePage";
+import RegisterPage from "@/pages/Register/RegisterPage";
 
 import SucessAlert from "@/components/PlaceholderComponents/SucessAlert";
 
@@ -24,6 +27,9 @@ const Router = () => {
       <Route path="/loading-screen" element={<LoadingScreen />} />
       <Route path="/alert" element={<SucessAlert />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/products" element={<ProductsPage />} />
+      <Route path="/products-single" element={<ProductsSinglePage />} />
+      <Route path="/register" element={<RegisterPage />} />
 
     {/* 404 page */}
       <Route path='*' element={<NotFound />} />

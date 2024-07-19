@@ -323,4 +323,216 @@ export const serviceCategories = [
     }
 ];
 
+export const productsData = [
+    {
+        'id': 1,
+        'name': 'Glass Cleaner',
+        'category': 'Cleaning Supplies',
+        'price': '$5',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.5,
+        'reviews': 10,
+        'description': 'Professional glass cleaner for home and office use.'
+    },
+    {
+        'id': 2,
+        'name': 'Dish Soap',
+        'category': 'Cleaning Supplies',
+        'price': '$3',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.2,
+        'reviews': 25,
+        'description': 'Effective dish soap for tough grease and stains.'
+    },
+    {
+        'id': 3,
+        'name': 'Laundry Detergent',
+        'category': 'Cleaning Supplies',
+        'price': '$8',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.8,
+        'reviews': 30,
+        'description': 'High-efficiency laundry detergent for all machines.'
+    },
+    {
+        'id': 4,
+        'name': 'Surface Cleaner',
+        'category': 'Cleaning Supplies',
+        'price': '$6',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.6,
+        'reviews': 15,
+        'description': 'Multi-surface cleaner for home and office use.'
+    },
+    {
+        'id': 5,
+        'name': 'Paper Towels',
+        'category': 'Cleaning Supplies',
+        'price': '$4',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.3,
+        'reviews': 20,
+        'description': 'Strong and absorbent paper towels for everyday use.'
+    },
+    {
+        'id': 6,
+        'name': 'Sponges',
+        'category': 'Cleaning Supplies',
+        'price': '$2',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.7,
+        'reviews': 18,
+        'description': 'Durable sponges for all your cleaning needs.'
+    },
+    {
+        'id': 7,
+        'name': 'Broom',
+        'category': 'Cleaning Supplies',
+        'price': '$10',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.4,
+        'reviews': 22,
+        'description': 'Lightweight broom for efficient cleaning.'
+    },
+    {
+        'id': 8,
+        'name': 'Mop',
+        'category': 'Cleaning Supplies',
+        'price': '$12',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.5,
+        'reviews': 12,
+        'description': 'Microfiber mop for deep cleaning.'
+    },
+    {
+        'id': 9,
+        'name': 'Toilet Cleaner',
+        'category': 'Cleaning Supplies',
+        'price': '$7',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.6,
+        'reviews': 25,
+        'description': 'Powerful toilet cleaner for tough stains.'
+    },
+    {
+        'id': 10,
+        'name': 'Trash Bags',
+        'category': 'Cleaning Supplies',
+        'price': '$5',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.2,
+        'reviews': 30,
+        'description': 'Heavy-duty trash bags for all purposes.'
+    },
+    {
+        'id': 11,
+        'name': 'Hand Sanitizer',
+        'category': 'Cleaning Supplies',
+        'price': '$3',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.7,
+        'reviews': 40,
+        'description': 'Alcohol-based hand sanitizer for germ-free hands.'
+    },
+    {
+        'id': 12,
+        'name': 'Air Freshener',
+        'category': 'Cleaning Supplies',
+        'price': '$4',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.5,
+        'reviews': 15,
+        'description': 'Long-lasting air freshener for a pleasant environment.'
+    },
+    {
+        'id': 13,
+        'name': 'Scrub Brush',
+        'category': 'Cleaning Supplies',
+        'price': '$6',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.4,
+        'reviews': 10,
+        'description': 'Heavy-duty scrub brush for tough cleaning tasks.'
+    },
+    {
+        'id': 14,
+        'name': 'Window Cleaner',
+        'category': 'Cleaning Supplies',
+        'price': '$5',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.6,
+        'reviews': 20,
+        'description': 'Streak-free window cleaner for sparkling windows.'
+    },
+    {
+        'id': 15,
+        'name': 'Floor Cleaner',
+        'category': 'Cleaning Supplies',
+        'price': '$7',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.8,
+        'reviews': 22,
+        'description': 'Effective floor cleaner for all types of floors.'
+    },
+    {
+        'id': 16,
+        'name': 'Disinfectant Wipes',
+        'category': 'Cleaning Supplies',
+        'price': '$6',
+        'image': 'https://images.unsplash.com/photo-1714479124820-8aaa9c7722af?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'rating': 4.7,
+        'reviews': 35,
+        'description': 'Convenient disinfectant wipes for quick cleaning.'
+    }
+];
+
+export const provinceData = [
+    {
+        id: 1,
+        name: 'Western Province',
+        value: 'western'
+    },
+    {
+        id: 2,
+        name: 'Central Province',
+        value: 'central'
+    },
+    {
+        id: 3,
+        name: 'Southern Province',
+        value: 'southern'
+    },
+    {
+        id: 4,
+        name: 'Northern Province',
+        value: 'northern'
+    },
+    {
+        id: 5,
+        name: 'Eastern Province',
+        value: 'eastern'
+    },
+    {
+        id: 6,
+        name: 'North Western Province',
+        value: 'north-western'
+    },
+    {
+        id: 7,
+        name: 'North Central Province',
+        value: 'north-central'
+    },
+    {
+        id: 8,
+        name: 'Uva Province',
+        value: 'uva'
+    },
+    {
+        id: 9,
+        name: 'Sabaragamuwa Province',
+        value: 'sabaragamuwa'
+    }
+];
+
+
 

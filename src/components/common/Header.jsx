@@ -33,7 +33,7 @@ function Header() {
         <header className={`fixed left-0 top-0 w-full z-50 ${scrollClass} transition-all`}>
             <div className="mx-auto container px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
-                    <div className="flex-1 md:flex md:items-center md:gap-12">
+                    <div className="md:flex md:items-center md:gap-12">
                         <Link className="block text-teal-600" to="/">
                             <span className="sr-only">Home</span>
                             <img src={logo} className="w-[120px] md:w-full md:h-[70px]" alt="logo"/>
@@ -65,7 +65,7 @@ function Header() {
                                 <div className="hidden sm:flex">
                                     <Link
                                         className={buttonVariants({ variant: "secondary" })}
-                                        to="#"
+                                        to="/register"
                                     >
                                         Register
                                     </Link>

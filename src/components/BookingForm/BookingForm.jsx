@@ -5,10 +5,11 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import DatePicker from "@/components/DatePicker/DatePicker"
+import './BookingForm.css';
 
 export default function BookingForm() {
   return (
-    <Card className="max-w-md mx-auto">
+    <Card className="w-full mx-auto">
       <CardHeader>
         <CardTitle>Book a Service</CardTitle>
         <CardDescription>Fill out the form to schedule an appointment.</CardDescription>

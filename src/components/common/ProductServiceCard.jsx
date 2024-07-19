@@ -6,10 +6,10 @@ import { Button } from '@/components/ui/button';
 
 function ProductServiceCard(props) {
 
-    const  { classNames, title, description, price, banner } = props;
+    const  { classNames, title, description, price, banner, link } = props;
 
     return (
-        <Link to="/services-single" className={`${classNames} group relative block overflow-hidden rounded-md`}>
+        <Link to={link} className={`${classNames} group relative block overflow-hidden rounded-md`}>
             <button
                 className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
             >
@@ -32,7 +32,7 @@ function ProductServiceCard(props) {
             </button>
 
             <img
-                src="https://images.unsplash.com/photo-1599481238640-4c1288750d7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80"
+                src={banner ? banner : 'https://placehold.co/800x800?text=Hello+World'}
                 alt=""
                 className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
             />
